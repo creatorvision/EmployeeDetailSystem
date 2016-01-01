@@ -48,8 +48,7 @@ class EmployeeDetail
      		conn = DriverManager.getConnection("jdbc:mysql://localhost/employee",user,pass);
 
      		stmt = conn.createStatement();
-      		String sql;
-      		sql = "CREATE TABLE IF NOT EXISTS employeedetail"+ "(EMPLOYEE_ID VARCHAR(255) ,NAME VARCHAR(255), AGE INT(100), DESIGNATION VARCHAR(255), SALARY INT(100) )";
+      		String sql = "CREATE TABLE IF NOT EXISTS employeedetail"+ "(EMPLOYEE_ID VARCHAR(255) ,NAME VARCHAR(255), AGE INT(100), DESIGNATION VARCHAR(255), SALARY INT(100) )";
      		stmt.executeUpdate(sql);
      		stmt.close();
 
